@@ -165,22 +165,6 @@ function App() {
 
   return (
     <div className="overlay-container">
-      {/* Toggle Controls Button */}
-      <div className="overlay-controls">
-        <button
-          className="toggle-controls"
-          onClick={() => setShowControls(!showControls)}
-        >
-          {showControls ? "👁️" : "⚙️"}
-        </button>
-        <button
-          className="toggle-controls help-btn"
-          onClick={() => setShowHelp(!showHelp)}
-        >
-          ❓
-        </button>
-      </div>
-
       {/* Main Scoreboard */}
       <div className="scoreboard">
         <div className="team home-team">
@@ -356,6 +340,22 @@ function App() {
                 </div>
               </div>
             )}
+          </div>
+
+          {/* Toggle Controls Buttons */}
+          <div className="overlay-controls">
+            <button
+              className="toggle-controls"
+              onClick={() => setShowControls(!showControls)}
+            >
+              {showControls ? "👁️" : "⚙️"}
+            </button>
+            <button
+              className="toggle-controls help-btn"
+              onClick={() => setShowHelp(!showHelp)}
+            >
+              ❓
+            </button>
           </div>
         </div>
       )}
