@@ -310,6 +310,14 @@
   z-index: 1000;
 }
 
+/* Fixed Toggle Button (always visible when controls are hidden) */
+.fixed-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 /* Toggle Controls Button */
 .toggle-controls {
   background: rgba(0, 0, 0, 0.8);
@@ -553,6 +561,11 @@
   
   /* Hide overlay controls on mobile */
   .overlay-controls {
+    display: none;
+  }
+  
+  /* Hide fixed toggle on mobile */
+  .fixed-toggle {
     display: none;
   }
 }

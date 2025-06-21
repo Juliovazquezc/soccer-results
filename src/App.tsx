@@ -203,6 +203,18 @@ function App() {
         </div>
       </div>
 
+      {/* Always visible toggle button */}
+      {!showControls && (
+        <div className="fixed-toggle">
+          <button
+            className="toggle-controls"
+            onClick={() => setShowControls(true)}
+          >
+            ⚙️
+          </button>
+        </div>
+      )}
+
       {/* Control Panel */}
       {showControls && (
         <div className="controls">
